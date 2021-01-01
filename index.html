@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Epilogue:wght@300&family=Hind+Madurai:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+    <style>
+        .divtable {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: whitesmoke;
+        }
+        /* for button styling*/
+        button{
+            background: none;
+            color: black;
+            width: 120px;
+            height: 50px;
+            border: none;
+            font-size: 13px;
+            margin-bottom: 0px;
+            transition: .6s;
+            overflow: hidden;
+        }
+        button:focus{
+            outline: none;
+        }/* when gets focused doesnt produces box*/
+        button::before{
+            background-color: white;
+            width: 240px;
+            height: 50px;
+            opacity: .5s;
+            filter: blur(30px);
+        }
+        button::after{
+            background-color:white;
+            width: 240px;
+            height: 50px;
+            opacity: 0;
+            filter: blur(30px);
+        }
+        button:hover{
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover::before{
+            opacity: .6;
+            transition: .7s;
+        }
+        button:hover::after{
+            opacity: 1;
+            transition: .7s;
+        }
+/* button styling ends here*/
+        p {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body>div.img-style {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .flex-box1 {
+            padding: 80px 140px 50px 160px;
+        }
+
+        .flex-box2 {
+            padding: 100px 0px 100px 280px;
+        }
+
+        .font1 {
+            font-family: 'Merriweather', serif;
+            font-size: 22px;
+            padding-bottom: 13px;
+        }
+
+        .font2 {
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 17px;
+
+        }
+
+        /* for the icons*/
+        .footer1 {
+            background-color: lightgrey;
+            padding: 40px 0px 40px 150px;
+
+        }
+        .footer1>a:hover i {
+            color: lightslategrey;
+            transition: ease;
+        }
+
+        .father{
+            text-align: left;
+            background-color: whitesmoke;
+            padding-left: 80px;
+            padding-top: 40px;
+        }
+        .father>.footer2 {
+            font-family: 'Hind Madurai', sans-serif;
+            display: flex;
+            align-content: flex-start;
+            color: black;
+            text-decoration: none;
+        }
+        .father>.footer3 {
+            font-family: 'Hind Madurai', sans-serif;
+            display: flex;
+            align-content: flex-start;
+            text-align: left;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            padding-left: 25px;
+        }
+
+        .footer2 li a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer2 li a:hover{
+            color: lightslategray;
+        }
+
+        .footer3 p a{
+            text-decoration: none;
+            color: black;
+        }
+        .footer3 p a:hover {
+            color: lightslategray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="divtable">
+            <img src="image/logo/logo.png" style="padding-left: 100px; padding-top: 20px; height: 70px; width: 70px;">
+            <div class="btn-hover">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <td>
+                                <button>COFFEE</button>
+                            </td>
+                            <td>
+                                <button>MENU</button>
+                            </td>
+                            <td>
+                                <button>COFFEE HOUSE</button>
+                            </td>
+                            <td>
+                                <button>RESPONSIBILITY</button>
+                            </td>
+                            <td>
+                                <button>CARD</button>
+                            <td>
+                                <button>CARREERS</button>
+                            </td>
+                            <td>
+                                <button>GIFT A STARBUCKS</button>
+                            </td>
+                            <td>
+                                <button>STARBUCKS DELIVERS</button>
+                            </td>
+                            <td>
+                                <button>ABOUT US</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <div class="img-style">
+        <img src="image/cover/cover8.jpg" height="100%" width="100%">
+        <img src="image/cover/cover9.jpg" height="100%" width="100%">
+        <img src="image/cover/cover10.jpg" height="100%" width="100%">
+        <img src="image/cover/cover1.jpg" height="100%" width="100%">
+        <img src="image/cover/cover2.png" height="100%" width="100%">
+        <img src="image/cover/cover3.jpg" height="100%" width="100%">
+        <img src="image/cover/cover4.png" height="100%" width="100%">
+        <img src="image/cover/cover5.png" height="100%" width="100%">
+
+        <div>
+            <table>
+                <tr>
+                    <td><img src="image/cover/cover6.png" class="flex-box1"
+                            style="display: flex; justify-content: flex-start;"></td>
+                    <td>
+                        <ul type="none">
+                            <li class="font1">LET US DELIGHT YOU.</li>
+                            <li class="font2">Delicious, handcrafted beverages and great-tasting food. The<br> secret to
+                                making life better.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <ul type="none" style="padding-left: 180px; padding-top: 100px;">
+                            <li class="font1">OPPORTUNITY</li>
+                            <li class="font2">To be more than an employee, to be a partner.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="image/cover/cover7.png" class="flex-box2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <a href="https://www.facebook.com/starbucksindia" style="padding-right: 20px; color:black;"><i class="fa fa-2x fa-facebook"></i></a>
+            <a href="twitter.com/starbucksindia" style="padding-right: 20px; color:black;"><i class="fa fa-2x fa-twitter"></i></a>
+            <a href="https://www.instagram.com/starbucksindia/" style=" color:black;"><i class="fa fa-2x fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <footer class="father">
+        <div class="footer2">
+            <ul type="none">
+                <li style="font-size: 15px; font-weight: bold; padding-bottom: 10px;"><a href="">ABOUT US</a></li>
+                <li><a href="">Heritage</a></li>
+                <li><a href="">Our Company</a></li>
+            </ul>
+
+            <ul type="none">
+                <li style="font-size: 15px; font-weight: bold; padding-bottom: 10px;"><a href="">CUSTOMER SERVICE</a></li>
+                <li><a href="">Frequently Asked Questions</a></li>
+            </ul>
+
+            <ul type="none">
+                <li style="font-size: 15px; font-weight: bold; padding-bottom: 10px;">QUICK LINKS</li>
+                <li><a href="">Store Locator</a></li>
+            </ul>
+        </div>
+
+        <div class="footer3">
+            <p><a href="">Web Accessiblity</a></p>
+            <p> | </p>
+            <p><a href="">Privacy Statement</a></p>
+            <p> | </p>
+            <p><a href="">Terms of use </a></p>
+            <p> | </p>
+            <p><a href="">Site Map </a></p>
+            <p> | </p>
+            <p><a href="">Contact Us </a></p>
+            <p> | </p>
+            <p><a href="">Cookie Preferences </a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!--
+    .......comment section....
+
+
+-->
